@@ -1,2 +1,280 @@
 @charset "utf-8";
 /* Assignment 1 | COMP1073 Client-Side JavaScript */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+html,body{
+    height: 100%;
+    width: 100%;
+   /* background-image: url(https://thebusinessofesports.com/wp-content/uploads/2022/03/1519799284954.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+        background-repeat: no-repeat;*/
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    
+}
+.page_1{
+    height: 100vh;
+    width:100%;
+    display: flex;
+   
+}
+.left{
+    height: 100vh;
+    width: 50%;
+
+}
+.right{
+    height: 100vh;
+    width: 50%;
+    padding: 10px;
+    margin-top: 5%;
+}
+.group_1{
+    display: flex;
+    
+     width: 12%;
+flex-direction: column;
+    
+    gap: 10px;
+    margin: 30px 30px 35px;
+    
+    
+}
+.butoon-1{
+    border-radius: 60%;
+    background-color: #a243e1;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 31px;
+    height: 75px;
+    width: 75px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  
+}
+.butoon-1:active{background-color: #48abe0;
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+}
+  
+  .butoon-2{
+    border-radius: 60%;
+    background-color: #50dcff;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 31px;
+    height: 75px;
+    width: 75px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  
+}
+.butoon-2:active{background-color: #48abe0;
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);}
+
+  .butoon-3{
+    border-radius: 70%;
+    background-color: #52ee59;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 31px;
+    height: 75px;
+    width: 75px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  
+}
+.butoon-3:active{background-color: #48abe0;
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+}
+  
+  .butoon-4{
+    border-radius: 60%;
+    background-color: #fe770f;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 31px;
+    height: 75px;
+    width: 75px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  
+}
+.butoon-4:active{
+    background-color: #48abe0;
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+}
+.butoon-5{
+    border-radius: 60%;
+    background-color: #fe0fee;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 31px;
+    height: 75px;
+    width: 75px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  
+}
+.butoon-5:active{
+    background-color: #48abe0;
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+}
+.group_2{
+    position:absolute;
+    display: flex;
+    gap: 20px;
+justify-content:space-between;
+align-items: center;
+    top: 15%;
+    left:10%;
+    width: 15%;
+    
+}
+
+.button-all{
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #2f78ff 0%, #c9d9f5 100%);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 81, 47, 0.4);
+
+}
+.button-all:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(246, 240, 238, 0.6);
+}
+
+.button-all:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(255, 81, 47, 0.4);
+}
+
+#button_result{
+    margin: 10px;
+    padding: 10px;
+    border: 1px black solid;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    display: flex;
+    gap: 35px;
+    width:auto;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+#pronoun_{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    
+    font-weight: 500;
+    font-size: 18px;
+}
+#action{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    
+    font-weight: 500;
+    font-size: 18px;
+}
+#emotion-value{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    
+    font-weight: 500;
+    font-size: 18px;
+}
+#livingnoun-value{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    
+    font-weight: 500;
+    font-size: 18px;
+}
+#place-value{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    
+    font-weight: 500;
+    font-size: 18px;
+}
+.output-container{
+display: flex;
+flex-direction: column;
+position: absolute;
+left:10%;
+top: 35%;
+width:20%;
+
+}
+#story_satatus{
+    height: 120px;
+    width: 320px;
+    
+    border: 1px black solid;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+#speak-status{
+    height: 100px;
+    width: 150px;
+    border: 1px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    overflow: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: 10px;
+}
+
+
+.instruction-box {
+    margin-top:25%;
+    margin:20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
