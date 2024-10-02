@@ -3,13 +3,98 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
-	<link rel="stylesheet" href="css/normalize.css" />
+	<title>Story Maker</title>
 	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/normalize.css" />
 </head>
 
 <body>
-	<button>Speak the value of var textToSpeak</button>
-	<script src="js/app.js"></script>
+<h1>
+	
+		Toy story creation
+		
+</h1>
+
+<p class="intro">
+	Welcome to see-n-say story creation web app that allows you to create your random story by just pushing single button.
+</p>
+
+<div class="page_1">
+    <div class="left">
+<div class="group_1">
+	
+	<button id="Tittle-button" class="butoon-1">1</button>
+	
+	<button id="Action-button" class="butoon-2">2</button>
+
+	<button id="Emotion-button" class="butoon-3">3</button>
+	
+	<button id="Animal-button" class="butoon-4">4</button>
+	
+	<button id="Location-button" class="butoon-5">5</button>
+	
+  </div>
+  <div>
+	<div class="group_2">
+	  <button id="speak_button" class="button-all">Speak</button>
+	  
+	  <button id="reset_button" class="button-all">Reset</button>
+	
+	  <button id="create_button" class="button-all">Random Story</button>
+      <button id="howToUseButton" class="button-all">How to Use</button>
+	  
+	</div>
+	<div id="button_result" >
+		<p>Noun: <span id="pronoun_"></span></p>
+		<p>Verb: <span id="action"></span></p>
+		<p>Adjective: <span id="emotion-value"></span></p>
+		<p>Noun 2: <span id="livingnoun-value"></span></p>
+		<p>Place: <span id="place-value"></span></p>
+	  </div>
+	  <div class="output-container">
+	  
+	    <div id="story_satatus" style=""></div>
+	  <div id="speak-status"></div>
+
+	  
+	  </div>
+	
+  </div>
+</div>
+<div class="right">
+    <div class="instruction-section">
+        
+        
+        <div id="instructionBox" class="instruction-box" style="display: none;">
+            <h2>Instructions to Use Toy Story Creation Web App:</h2>
+            <ol>
+                <li><strong>Select Story Elements:</strong>
+                    <ul>
+                        <li>Click the numbered buttons (1 to 5) on the left to choose the following elements for your story:</li>
+                        <li><strong>Button 1:</strong> Generates a <em>Noun</em> (e.g., "The turkey").</li>
+                        <li><strong>Button 2:</strong> Generates a <em>Verb</em> (e.g., "sat on").</li>
+                        <li><strong>Button 3:</strong> Generates an <em>Adjective</em> (e.g., "a funny").</li>
+                        <li><strong>Button 4:</strong> Generates a second <em>Noun</em> (e.g., "goat").</li>
+                        <li><strong>Button 5:</strong> Generates a <em>Place</em> (e.g., "on the moon").</li>
+                    </ul>
+                </li>
+                <li><strong>Create a Random Story:</strong> Press the <strong>Random Story</strong> button to generate an entire random story in one click.</li>
+                <li><strong>View Your Story:</strong> The story you create will be displayed in the large text area in the center of the page.</li>
+                <li><strong>Speak the Story:</strong> Press the <strong>Speak</strong> button to hear your story read aloud.</li>
+                <li><strong>Reset Your Story:</strong> Press the <strong>Reset</strong> button to clear all the selected elements and start fresh.</li>
+                <li><strong>Have Fun!</strong> Combine different words to create fun, silly, or creative stories.</li>
+            </ol>
+        </div>
+    </div>
+    
+    
+</div>
+</div>
+    
+	<script src="js/app.js"> document.addEventListener('DOMContentLoaded', function () {
+		// Your JavaScript code here
+	});
+	
+	</script>
 </body>
 </html>
